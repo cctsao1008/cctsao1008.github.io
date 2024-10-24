@@ -651,17 +651,17 @@ var dfu = {};
         }
 
         // Reset to exit MANIFEST_WAIT_RESET
-        try {
-            await this.device_.reset();
-        } catch (error) {
-            if (error == "NetworkError: Unable to reset the device." ||
-                error == "NotFoundError: Device unavailable." ||
-                error == "NotFoundError: The device was disconnected.") {
-                this.logDebug("Ignored reset error");
-            } else {
-                throw "Error during reset for manifestation: " + error;
-            }
-        }
+        //try {
+        //    await this.device_.reset();
+        //} catch (error) {
+        //    if (error == "NetworkError: Unable to reset the device." ||
+        //        error == "NotFoundError: Device unavailable." ||
+        //        error == "NotFoundError: The device was disconnected.") {
+        //        this.logDebug("Ignored reset error");
+        //    } else {
+        //        throw "Error during reset for manifestation: " + error;
+        //    }
+        //}
 
         return;
     };
